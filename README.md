@@ -71,7 +71,7 @@ The ER diagram includes the following entities and their relationships:
 ##### 🔗 Relationships
 
 - **WORK**: Connects EMPLOYEE and DEPARTMENT (Employees work in departments)
-- **ENROLLS**: Connects DEPARTMENT and PROJECTS (Departments enroll in projects)
+- **ENROLLS**: Connects DEPARTMENT and PROJECTS (Departments are assigned to/manage projects)
 - **enrolls**: Connects STUDENT and COURSE (Students enroll in courses)
 
 #### 📸 ER Diagram Visualization
