@@ -34,55 +34,6 @@ DBMS-S4/
 └── ER DIAGRAM lab1.html            # Lab 1 ER Diagram (interactive)
 ```
 
-## 🔬 Laboratory Exercises
-
-### Lab 1: Entity-Relationship Diagram Design
-
-**Objective:** Design a comprehensive ER diagram for a multi-entity database system
-
-**Description:** This lab introduces Entity-Relationship modeling with a complex database schema involving multiple entities and relationships.
-
-#### Database Schema Overview
-
-The ER diagram includes the following entities and their relationships:
-
-##### 📊 Entities
-
-1. **EMPLOYEE**
-   - Attributes: `eno` (Employee Number), `name`, `dob` (Date of Birth), `gender`, `panno` (PAN Number), `basic_payee`, `designation`, `doj` (Date of Joining)
-   - Primary Key: `eno`
-
-2. **DEPARTMENT**
-   - Attributes: `d_no` (Department Number), `dname` (Department Name)
-   - Primary Key: `d_no`
-
-3. **PROJECTS**
-   - Attributes: `pcode` (Project Code), `pname` (Project Name)
-   - Primary Key: `pcode`
-
-4. **STUDENT**
-   - Attributes: `roll_no` (Roll Number), `name`, `dob` (Date of Birth), `dept` (Department)
-   - Primary Key: `roll_no`
-
-5. **COURSE**
-   - Attributes: `course_id`, `title`, `credits`
-   - Primary Key: `course_id`
-
-##### 🔗 Relationships
-
-- **WORK**: Connects EMPLOYEE and DEPARTMENT (Employees work in departments)
-- **ENROLLS**: Connects DEPARTMENT and PROJECTS (Departments are assigned to/manage projects)
-- **enrolls**: Connects STUDENT and COURSE (Students enroll in courses)
-
-#### 📸 ER Diagram Visualization
-
-![ER Diagram Lab 1](ER%20DIAGRAM%20lab1.drawio.png)
-
-*The diagram showcases entities (rectangles), attributes (ovals), and relationships (diamonds) following standard ER modeling conventions.*
-
-#### 🌐 Interactive View
-
-For an interactive view of the ER diagram, open the [ER DIAGRAM lab1.html](ER%20DIAGRAM%20lab1.html) file in your web browser.
 
 ## 🚀 Getting Started
 
