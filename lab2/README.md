@@ -3,20 +3,35 @@ Questions:
 Create a table named employee and populate the table as shown below: emp_id, emp_name, dept, salary with emp_id as primary key field. Consider the table employee and insert tuples with employee names starting with D, O, C, A. Employee department names include HR, Marketing, Production, Sales, etc. Salary from 200 to 1000.
 
     - Select employee with salary greater than 7k
+    
     - Update the salary of "David Smith" to 8200
+    
     - Insert a new employee with emp_id = 6, emp_name = "Daniel Allarsis", dept = "Production" and salary 6700
+    
     - Delete the employee with emp_id = 3
+    
     - Select employee whose name does not start with D or O
+    
     - Calculate the total salary expense for each dept
+    
     - Update the salary of employees in the Production dept by adding 5% to their current salaries
+    
     - Delete all employees with salary below 7k
+    
     - Find the employee with the lowest salary and display their name and salary
+    
     - Update the salary of employees in the Marketing department to 8200
+    
     - Find the name of all employees starting with the alphabet A
+    
     - List the name of all employees where the emp_name contains the substring 'it'
+    
     - List all the depts in uppercase format
+    
     - List all employee details whose dept starts with 'M' with the 3rd letter as 'r' and contains the substring 'ket'
+    
     - List all depts in reverse uppercase format - no duplicates
+  
 
 ---
 
