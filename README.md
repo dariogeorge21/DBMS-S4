@@ -9,7 +9,7 @@
 
 **A comprehensive repository for Database Management Systems laboratory work**
 
-[About](#-about) • [Labs](#-laboratory-exercises) • [Getting Started](#-getting-started) • [Resources](#-resources) • [Contributing](#-contributing)
+[📚 About](#-about) • [🎯 Objectives](#-course-objectives) • [🧪 Labs](#-laboratory-exercises) • [🚀 Get Started](#-getting-started) • [📖 Resources](#-resources)
 
 </div>
 
@@ -35,10 +35,10 @@ This repository contains laboratory exercises, assignments, and projects for the
 
 ### What You'll Find Here
 
-- 📊 **Entity-Relationship Diagrams**: Visual database schema designs
-- 💻 **SQL Scripts**: Comprehensive database queries and operations
-- 📸 **Screenshots**: Step-by-step visual documentation
-- 📝 **Lab Reports**: Detailed explanations and results
+- 📊 **Entity-Relationship Diagrams**: Complete ER diagrams with multiple entities, relationships, and cardinality notations
+- 💻 **SQL Scripts**: Comprehensive SQL queries covering DDL and DML operations
+- 📸 **Screenshots**: Step-by-step visual documentation of query execution and results
+- 📝 **Lab Documentation**: Detailed explanations, objectives, and learning outcomes for each exercise
 
 ---
 
@@ -71,11 +71,14 @@ This course aims to provide students with comprehensive knowledge and practical 
 **📁 Contents:**
 - ER diagram visualization (PNG and HTML formats)
 - Detailed entity and relationship documentation
-- [View Lab 1 →](lab1)
+- [View Lab 1 →](./lab1)
 
 **🗂️ Schema Overview:**
 - **Entities:** EMPLOYEE, DEPARTMENT, PROJECTS, STUDENT, COURSE
-- **Relationships:** WORK, ENROLLS (employees-departments, students-courses)
+- **Relationships:** 
+  - WORK (Employees ↔ Departments)
+  - ENROLLS (Departments ↔ Projects)
+  - enrolls (Students ↔ Courses)
 
 ---
 
@@ -83,26 +86,27 @@ This course aims to provide students with comprehensive knowledge and practical 
 **📋 Objective:** Master SQL commands for data manipulation and querying
 
 **🔑 Key Topics:**
-- Table creation with constraints
+- Table creation with constraints (PRIMARY KEY)
 - Data insertion and population
-- SELECT queries with various conditions
+- SELECT queries with various filtering conditions
 - UPDATE and DELETE operations
-- Aggregate functions and GROUP BY
-- String manipulation functions
-- Pattern matching with LIKE
+- Aggregate functions (SUM, MIN, MAX)
+- String manipulation functions (UPPER, REVERSE)
+- Pattern matching with LIKE operator
 
 **📁 Contents:**
-- SQL scripts for all operations
-- Screenshots demonstrating each query result
-- [View Lab 2 →](lab2)
+- Complete SQL scripts for all DML operations
+- Step-by-step screenshots demonstrating query execution and results
+- [View Lab 2 →](./lab2)
 
 **💡 Skills Practiced:**
-- Creating tables with primary keys
-- Inserting and updating records
-- Complex WHERE clauses
-- Salary calculations and aggregations
-- String functions (UPPER, REVERSE, LIKE patterns)
-- Department-wise analysis
+- Creating employee tables with primary key constraints
+- Inserting and updating employee records
+- Complex WHERE clauses with multiple conditions
+- Salary calculations and percentage-based updates
+- String functions and pattern matching
+- Department-wise salary aggregations
+- Finding minimum/maximum salary values
 
 ---
 
@@ -118,15 +122,14 @@ DBMS-S4/
 │   └── lab1 tasks.html               # Lab 1 task specifications
 │
 ├── lab2/                              # Lab 2: SQL DML Operations
-│   ├── README.md                      # Lab 2 documentation with queries
-│   └── screenshots/                   # Query result screenshots
-│       └── index.md                   # Screenshots index
+│   ├── README.md                      # Lab 2 documentation with all SQL queries
+│   └── screenshots/                   # Query execution result screenshots
 │
-├── ER DIAGRAM lab1.drawio.png        # Lab 1 ER Diagram (static image)
-└── ER DIAGRAM lab1.html              # Lab 1 ER Diagram (interactive)
+├── ER DIAGRAM lab1.drawio.png        # Lab 1 ER Diagram (PNG format)
+└── ER DIAGRAM lab1.html              # Lab 1 ER Diagram (interactive HTML)
 ```
 
-> 📸 **Note:** Screenshots for documentation will be added in the `screenshots/` directory as the labs progress.
+> 📸 **Note:** Each lab includes detailed screenshots documenting the execution and results of all exercises.
 
 ---
 
@@ -155,44 +158,65 @@ git clone https://github.com/dariogeorge21/DBMS-S4.git
 cd DBMS-S4
 ```
 
-#### 2️⃣ View ER Diagrams
+#### 2️⃣ Set Up Your Database Environment
 
-**Static View:**
-```bash
-# Open the PNG file in your preferred image viewer
-open "ER DIAGRAM lab1.drawio.png"
-```
-
-**Interactive View:**
-```bash
-# Open the HTML file in your web browser
-open "ER DIAGRAM lab1.html"
-```
-
-**Edit Diagrams:**
-- Visit [diagrams.net](https://app.diagrams.net/)
-- Import the PNG or HTML file
-- Make your modifications
-- Export as needed
-
-#### 3️⃣ Set Up Your Database
-
+**For MySQL:**
 ```sql
--- Example for MySQL
+-- Create and use the database
 CREATE DATABASE dbms_lab;
 USE dbms_lab;
 
 -- Follow the lab-specific SQL scripts in each lab folder
+-- Example: Execute queries from lab2/README.md
 ```
+
+**For PostgreSQL:**
+```sql
+-- Create and connect to the database
+CREATE DATABASE dbms_lab;
+\c dbms_lab
+
+-- Follow the lab-specific SQL scripts in each lab folder
+```
+
+#### 3️⃣ View and Edit ER Diagrams
+
+**View Static Image:**
+```bash
+# Open the PNG file in your preferred image viewer
+open "ER DIAGRAM lab1.drawio.png"
+# On Linux: xdg-open "ER DIAGRAM lab1.drawio.png"
+# On Windows: start "ER DIAGRAM lab1.drawio.png"
+```
+
+**View Interactive Diagram:**
+```bash
+# Open the HTML file in your web browser
+open "ER DIAGRAM lab1.html"
+# On Linux: xdg-open "ER DIAGRAM lab1.html"
+# On Windows: start "ER DIAGRAM lab1.html"
+```
+
+**Edit Diagrams:**
+1. Visit [diagrams.net](https://app.diagrams.net/)
+2. Click "Open Existing Diagram"
+3. Upload the PNG or HTML file
+4. Make your modifications
+5. Export in your preferred format (PNG, HTML, XML, etc.)
 
 #### 4️⃣ Explore Individual Labs
 
-Navigate to each lab directory for specific instructions:
+Navigate to each lab directory for specific instructions and exercises:
 
 ```bash
-cd lab1  # For ER Diagram exercises
-cd lab2  # For SQL DML exercises
+cd lab1  # For ER Diagram design exercises
+cd lab2  # For SQL DML operations and queries
 ```
+
+Each lab folder contains:
+- Detailed README with complete instructions
+- SQL scripts and queries
+- Screenshots of execution results
 
 ---
 
@@ -281,15 +305,23 @@ This is an academic repository created for coursework. Contributions, suggestion
 
 ---
 
+## 📄 License
+
+This project is created for academic purposes as part of the Database Management Systems laboratory coursework. Feel free to use this repository as a reference for your learning.
+
+---
+
 <div align="center">
 
 ### 📚 Happy Learning! ✨
 
-**Building strong foundations in Database Management Systems**
+**Building Strong Foundations in Database Management Systems**
 
 *Semester 4 | Academic Year 2026*
 
 ---
+
+⭐ Star this repository if you find it helpful! ⭐
 
 Made with ❤️ for DBMS Students
 
