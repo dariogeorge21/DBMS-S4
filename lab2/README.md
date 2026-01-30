@@ -24,7 +24,7 @@ CREATE TABLE employee(
 );
 ```
 
-**Proof:** [Screenshot 0.1](lab2/screenshots/0.1.png)
+**Proof:** [Screenshot 0.1](screenshots/0.1.png)
 
 ---
 
