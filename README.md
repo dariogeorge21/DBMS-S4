@@ -71,7 +71,7 @@ This course aims to provide students with comprehensive knowledge and practical 
 **📁 Contents:**
 - ER diagram visualization (PNG and HTML formats)
 - Detailed entity and relationship documentation
-- [View Lab 1 →](/lab1)
+- [View Lab 1 →](lab1)
 
 **🗂️ Schema Overview:**
 - **Entities:** EMPLOYEE, DEPARTMENT, PROJECTS, STUDENT, COURSE
@@ -94,7 +94,7 @@ This course aims to provide students with comprehensive knowledge and practical 
 **📁 Contents:**
 - SQL scripts for all operations
 - Screenshots demonstrating each query result
-- [View Lab 2 →](/lab2)
+- [View Lab 2 →](lab2)
 
 **💡 Skills Practiced:**
 - Creating tables with primary keys
