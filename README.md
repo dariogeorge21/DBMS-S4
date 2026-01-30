@@ -9,7 +9,7 @@
 
 **A comprehensive repository for Database Management Systems laboratory work**
 
-[📚 About](#-about) • [🎯 Objectives](#-course-objectives) • [🧪 Labs](#-laboratory-exercises) • [🚀 Get Started](#-getting-started) • [📖 Resources](#-resources)
+[📚 About](#-about) • [🎯 Objectives](#-course-objectives) • [🧪 Labs](#-laboratory-exercises) • [🚀 Getting Started](#-getting-started) • [📖 Resources](#-resources)
 
 </div>
 
