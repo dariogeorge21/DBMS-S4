@@ -24,7 +24,7 @@ CREATE TABLE employee(
 );
 ```
 
-**Proof:** [Screenshot 0.1](/screenshots/0.1.png)
+**Proof:** [Screenshot 0.1](lab2/screenshots/0.1.png)
 
 ---
 
@@ -51,7 +51,7 @@ INSERT INTO employee (emp_id, emp_name, dept, salary)
 VALUES (5, 'Daniel', 'Production', 6500);
 ```
 
-**Proof:** [Screenshot 0.2](/screenshots/0.2.png)
+**Proof:** [Screenshot 0.2](lab2/screenshots/0.2.png)
 
 ---
 
@@ -67,7 +67,7 @@ FROM employee
 WHERE salary > 7000;
 ```
 
-**Proof:** [Screenshot 1](/screenshots/1.png)
+**Proof:** [Screenshot 1](lab2/screenshots/1.png)
 
 ---
 
@@ -81,7 +81,7 @@ SET salary = 8200
 WHERE e_name = 'David';
 ```
 
-**Proof:** [Screenshot 2](/screenshots/2.png)
+**Proof:** [Screenshot 2](lab2/screenshots/2.png)
 
 ---
 
@@ -94,7 +94,7 @@ INSERT INTO employee (emp_id, emp_name, dept, salary)
 VALUES (6, 'Daniel Allaris', 'Production', 6700);
 ```
 
-**Proof:** [Screenshot 3](/screenshots/3.png)
+**Proof:** [Screenshot 3](lab2/screenshots/3.png)
 
 ---
 
@@ -107,7 +107,7 @@ DELETE FROM employee
 WHERE e_id = 3;
 ```
 
-**Proof:** [Screenshot 4](/screenshots/4.png)
+**Proof:** [Screenshot 4](lab2/screenshots/4.png)
 
 ---
 
@@ -122,7 +122,7 @@ WHERE e_name NOT LIKE 'D%'
 AND e_name NOT LIKE 'O%';
 ```
 
-**Proof:** [Screenshot 5](/screenshots/5.png)
+**Proof:** [Screenshot 5](lab2/screenshots/5.png)
 
 ---
 
@@ -136,7 +136,7 @@ FROM employee
 GROUP BY dept;
 ```
 
-**Proof:** [Screenshot 6](/screenshots/6.png)
+**Proof:** [Screenshot 6](lab2/screenshots/6.png)
 
 ---
 
@@ -150,7 +150,7 @@ SET salary = (salary + (salary * 0.15))
 WHERE dept = 'Production';
 ```
 
-**Proof:** [Screenshot 7](/screenshots/7.png)
+**Proof:** [Screenshot 7](lab2/screenshots/7.png)
 
 ---
 
@@ -163,7 +163,7 @@ DELETE FROM employee
 WHERE salary < 7000;
 ```
 
-**Proof:** [Screenshot 8](/screenshots/8.png)
+**Proof:** [Screenshot 8](lab2/screenshots/8.png)
 
 ---
 
@@ -176,7 +176,7 @@ SELECT e_name, MIN(salary)
 FROM employee;
 ```
 
-**Proof:** [Screenshot 9](/screenshots/9.png)
+**Proof:** [Screenshot 9](lab2/screenshots/9.png)
 
 ---
 
@@ -190,7 +190,7 @@ SET salary = 8200
 WHERE dept = 'Marketing';
 ```
 
-**Proof:** [Screenshot 10](/screenshots/10.png)
+**Proof:** [Screenshot 10](lab2/screenshots/10.png)
 
 ---
 
@@ -204,7 +204,7 @@ FROM employee
 WHERE e_name LIKE 'A%';
 ```
 
-**Proof:** [Screenshot 11](/screenshots/11.png)
+**Proof:** [Screenshot 11](lab2/screenshots/11.png)
 
 ---
 
@@ -218,7 +218,7 @@ FROM employee
 WHERE dept LIKE '%it%';
 ```
 
-**Proof:** [Screenshot 12](/screenshots/12.png)
+**Proof:** [Screenshot 12](lab2/screenshots/12.png)
 
 ---
 
@@ -231,7 +231,7 @@ SELECT DISTINCT UPPER(dept)
 FROM employee;
 ```
 
-**Proof:** [Screenshot 13](/screenshots/13.png)
+**Proof:** [Screenshot 13](lab2/screenshots/13.png)
 
 ---
 
@@ -246,7 +246,7 @@ WHERE dept LIKE 'M_r%'
 AND dept LIKE '%ket%';
 ```
 
-**Proof:** [Screenshot 14](/screenshots/14.png)
+**Proof:** [Screenshot 14](lab2/screenshots/14.png)
 
 ---
 
@@ -260,7 +260,7 @@ SELECT DISTINCT UPPER(dept) AS dept,
 FROM employee;
 ```
 
-**Proof:** [Screenshot 15](/screenshots/15.png)
+**Proof:** [Screenshot 15](lab2/screenshots/15.png)
 
 ---
 
